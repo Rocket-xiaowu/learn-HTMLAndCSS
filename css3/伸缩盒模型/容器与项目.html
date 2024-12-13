@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>容器与项目</title>
+    <style>
+        .outer{
+            width: 600px;
+            height: 600px;
+            background-color: gray;
+            /* 将元素变为伸缩容器（开启了flex布局） */
+            display: flex;
+            /* display: inline-flex; */
+        }
+        /* 只有直接的子元素才是项目 */
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+            float:left
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

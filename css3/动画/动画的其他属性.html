@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>动画的基本使用</title>
+    <style>
+        .outer{
+            width: 1000px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: deepskyblue;
+
+            animation-name: donghua;
+            /* 持续时间 */
+            animation-duration: 3s;
+            /* 延迟 */
+            animation-delay: 0.2s;
+            /* 动画的播放方式，同过渡 */
+            animation-timing-function: linear;
+            /* 播放次数 */
+            animation-iteration-count: infinite;
+            /* 动画的方向 */
+            animation-direction: alternate-reverse;
+            /* 动画以外的状态（不动的时候停在哪里） */
+            /* animation-fill-mode: forwards; */
+
+        }
+        .outer:hover .inner{
+            /* 动画的播放状态 */
+            animation-play-state: paused;
+        }
+        /* 定义一个动画（即定义关键帧）---第一种 */
+        @keyframes donghua{
+            /* 第一帧 */
+            from{
+                
+            }
+            /* 最后一帧 */
+            to{
+                transform: translate(900px) rotate(360deg);
+                background-color: purple;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>主轴上的对齐方式</title>
+    <style>
+        .outer{
+            width: 1000px;
+            height: 600px;
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            /* 主轴的对齐方式 默认*/
+            /* justify-content: flex-start; */
+
+            /* 从右往左 */
+            /* justify-content: flex-end; */
+
+            /* 居中 */
+            /* justify-content: center; */
+
+            /* 均匀分布，项目之间的距离相等且是相距边缘的2倍 */
+            /* justify-content: space-around; */
+
+            /* 均匀分布，项目距边缘没有距离 */
+            /* justify-content: space-between; */
+
+            /* 完全均匀 */
+            justify-content: space-evenly;
+        }
+        /* 只有直接的子元素才是项目 */
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+            float:left
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">1</div>
+        <div class="inner">2</div>
+        <div class="inner">3</div>
+    </div>
+</body>
+</html>

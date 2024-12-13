@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>侧轴对齐_多行</title>
+    <style>
+        .outer{
+            width: 1000px;
+            height: 900px;
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            /* 侧轴的多行对齐方式 侧轴的起始位置对齐*/
+            align-content: flex-start;
+
+            /* 侧轴的多行对齐方式 侧轴的结束位置对齐*/
+            align-content: flex-end;
+
+            /* 侧轴的多行对齐方式 侧轴的中间位置对齐*/
+            align-content: center;
+
+            /* 侧轴的多行对齐方式 伸缩项目之间的距离是相等的，且是边缘距离的两倍*/
+            align-content: space-around;
+
+            /* 侧轴的多行对齐方式 伸缩项目之间的距离是相等的，且边缘无距离*/
+            align-content: space-between;
+
+            /* 均匀分布 */
+            align-content: space-evenly;
+
+            /* 拉伸 */
+            align-content: stretch;
+        }
+        /* 只有直接的子元素才是项目 */
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+            float:left
+        }
+        .inner2{
+            height: 300px;
+        }
+        .inner3{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">1</div>
+        <div class="inner inner2">2</div>
+        <div class="inner inner3">3</div>
+        <div class="inner">4</div>
+        <div class="inner">5</div>
+        <div class="inner">6</div>
+        <div class="inner">7</div>
+        <div class="inner">8</div>
+        <div class="inner">9</div>
+        <div class="inner">10</div>
+        <div class="inner">11</div>
+    </div>
+</body>
+</html>

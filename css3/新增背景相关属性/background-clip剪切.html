@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>background-clip</title>
+    <style>
+         .box1{
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+            margin: 0 auto;
+            font-size: 100px;
+            padding: 50px;
+            border: 50px dashed rgba(255, 0, 0, 0.7);
+            color: transparent;
+
+            background-image: url(../../facivon.ico);
+            background-repeat: no-repeat;
+            background-clip: text;
+            background-origin: padding-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">你好啊</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>新增长度单位</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+        }
+        .box2{
+            width: 50vw;
+            height: 20vw;
+            background-color: green;
+        }
+        .box3{
+            width: 10vh;
+            height: 20vh;
+            background-color: gray;
+        }
+        .box4{
+            width: 20vmax;
+            height: 20vmax;
+            background-color: black;
+        }
+        .box5{
+            width: 20vmin;
+            height: 20vmin;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">像素</div>
+    <!-- 视口宽的百分比 -->
+    <div class="box2">vw</div>
+    <!-- 视口高的百分比 -->
+    <div class="box3">vh</div>
+    <!-- 以视口宽高中较大者为参考 -->
+    <div class="box4">vmax</div>
+    <!-- 以视口宽高中较小者为参考 -->
+    <div class="box5">vmin</div>
+</body>
+</html>

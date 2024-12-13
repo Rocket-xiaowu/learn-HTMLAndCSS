@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>伸缩性_伸</title>
+    <style>
+        .outer{
+            width: 1000px;
+            height: 600px;
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+            float:left;
+        }
+        /* 瓜分剩余空间，按照grow的数字比例分配
+        默认都是0，即不瓜分 */
+        .inner1{
+            flex-grow: 1;
+        }
+        .inner2{
+            flex-grow: 2;
+            width: 300px;
+        }
+        .inner3{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner inner1">1</div>
+        <div class="inner inner2">2</div>
+        <div class="inner inner3">3</div>
+    </div>
+</body>
+</html>

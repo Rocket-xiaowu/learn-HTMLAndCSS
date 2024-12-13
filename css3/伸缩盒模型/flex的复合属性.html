@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>flex的复合属性</title>
+    <style>
+        .outer{
+            width: 1000px;
+            height: 600px;
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+            /* 拉伸 */
+            /* flex-grow: 1; */
+            /* 压缩 */
+            /* flex-shrink: 1; */
+            /* 基准长度 */
+            /* flex-basis: 100px; */
+
+            /* 先拉伸，再伸缩，最后写基准长度。
+            不设置基准长度时，可以简写为flex:auto;*/
+            flex: 1 1 100px;
+
+            /* 常用简写：
+            1.flex:1 1 auto——>flex:auto
+            2.flex:1 1 0——>flex:1
+            3.flex:0 0 auto——>flex:none
+            4.flex:0 1 auto——>flex:0 auto
+            第四种，全部是默认值，默认是可压缩，不拉伸，不设置基准长度
+            第二种最常用，不设项目大小，均分容器
+            */
+        }
+        .inner2{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner inner1">1</div>
+        <div class="inner inner2">2</div>
+        <div class="inner inner3">3</div>
+    </div>
+</body>
+</html>

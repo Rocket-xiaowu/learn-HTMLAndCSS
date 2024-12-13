@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>项目的排序与单独对齐</title>
+    <style>
+        .outer{
+            width: 1000px;
+            height: 600px;
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+            flex:1 1 0;
+        }
+        .inner2{
+            /* 默认所有元素都是0，谁的值小，谁在前面 */
+            order: -1;
+        }
+
+        /* 单独对齐 */
+        .inner2{
+            align-self: self-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner inner1">1</div>
+        <div class="inner inner2">2</div>
+        <div class="inner inner3">3</div>
+    </div>
+</body>
+</html>

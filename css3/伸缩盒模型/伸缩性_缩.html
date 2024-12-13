@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>伸缩性_缩</title>
+    <style>
+        .outer{
+            width: 1000px;
+            height: 600px;
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+            /* 不换行才能压缩 */
+            /* flex-wrap: wrap; */
+            justify-content: flex-start;
+
+
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+            float:left;
+            flex-grow: 1;
+            /* 压缩：默认值是1 */
+            /* 压缩比的计算：项目大小*shrink值/（各项目的大小*各自shrink之后求和）(大小是内容区的大小) */
+            /* 压缩极限是至少保证项目内容的展现 */
+            flex-shrink: 1;
+        }
+        .inner2{
+            flex-grow: 2;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner inner1">1</div>
+        <div class="inner inner2">2</div>
+        <div class="inner inner3">3</div>
+    </div>
+</body>
+</html>

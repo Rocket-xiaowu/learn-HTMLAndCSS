@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>input新增的type属性</title>
+</head>
+<body>
+    <!-- novalidate不做任何校验格式，直接提交 -->
+    <form action="#" novalidate>
+        邮箱：<input type="email" name="Rocket@4399.com">
+        <br>
+        URL：<input type="url" name="url">
+        <br>
+        数值：<input type="number" name="number" step="10" max="80" min="20">
+        <br>
+        搜索：<input type="search" name="keyword">
+        <br>
+        电话：<input type="tel" name="phone">
+        <br>
+        范围选择器：<input type="range" name="range" max="80" min="20" value="30">
+        <br>
+        颜色：<input type="color" name="color">
+        <br>
+        日期：<input type="date" name="date">
+        <br>
+        月份：<input type="month" name="month">
+        <br>
+        星期：<input type="week" name="week">
+        <br>
+        时间：<input type="time" name="time">
+        <br>
+        时间+日期：<input type="datetime-local" name="time2">
+        <button>提交</button>
+    </form>
+</body>
+</html>
