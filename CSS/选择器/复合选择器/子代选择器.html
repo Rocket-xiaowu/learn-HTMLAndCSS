@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>子代选择器</title>
+    <!-- 要求只要div的子代变成红色，而不是所有后代 -->
+     <!-- 用大于号连接 -->
+     <style>
+        div>a{
+            color: red;
+        }
+        div>p>a{
+            color: green;
+        }
+     </style>
+</head>
+<body>
+    <div>
+        <a href="#">张三</a>
+        <a href="#">李四</a>
+        <a href="#">王五</a>
+        <p>
+            <a href="#">赵六</a>
+        </p>
+    </div>
+</body>
+</html>

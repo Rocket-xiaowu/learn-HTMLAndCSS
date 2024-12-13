@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>并集选择器</title>
+    <style>
+        .rich{
+            color: gold;
+            font-size: 80px;
+            background-color: red;
+            width: 400px;
+        }
+        .beauty{
+            color: blue;
+        }
+        .dog{
+            color: yellowgreen;
+        }
+        .pig{
+            color: pink;
+        }
+        /* 并集选择器即用逗号连接多个选择器 */
+        .rich,
+        .pig,
+        .beauty,
+        .dog{
+            font-size: 80px;
+            background-color: red;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <hr>
+    <p class="dog">小狗旺财</p>
+    <p class="pig">小猪佩奇</p>
+</body>
+</html>

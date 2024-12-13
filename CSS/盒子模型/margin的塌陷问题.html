@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>margin的塌陷问题</title>
+    <style>
+        /* 当父元素中的第一个子元素加上边距，
+        或最后一个子元素加下边距，
+        这两个边距会被父元素抢走，该问题即margin的塌陷问题 */
+        .outer{
+            width: 400px;
+            /* height: 400px; */
+            background-color: gray;
+            /* 解决方案1 */
+            /* border: 10px solid red; */
+            /* 解决方案2 */
+            /* padding: 10px; */
+            /* 上述两种方案不是最佳方法，因为其改变了盒子的打下 */
+            /* 解决方案3 */
+            overflow: hidden;
+        }
+        .inner1{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin-top: 50px;
+        }
+        .inner2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner1">inner1</div>
+        <div class="inner2">inner2</div>
+    </div>
+    <div>测试文字</div>
+</body>
+</html>

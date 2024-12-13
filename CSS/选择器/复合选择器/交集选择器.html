@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>交集选择器</title>
+    <style>
+        .rich{
+            color: gold;
+        }
+        .beauty{
+            color: red;
+        }
+        /* 即时p标签又是beauty类的交集 */
+        p.beauty{
+            color: green;
+        }
+        /* 类的交集，既是no-beauty又是cute */
+        .no-beauty.cute{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <hr>
+    <p class="beauty">小狗旺财</p>
+    <p class="no-beauty cute">小猪佩奇</p>
+    <p class="beauty">老鼠杰瑞</p>
+</body>
+</html>

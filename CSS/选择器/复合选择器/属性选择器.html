@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        /* 具有title属性即可被选中，无论里面的值 */
+        /* [title]{
+            color: red;
+        } */
+         /* 要求title的值为222 */
+        /* [title="222"]{
+            color: green;
+        } */
+        /* 选择title属性以a开头的元素 */
+        /* [title^="a"]{
+            color: blue;
+        } */
+        /* 选择title属性以4结尾的元素 */
+        /* [title$="4"]{
+            color: chocolate;
+        } */
+        /* 选中title属性且属性值中有1的元素，有即可 */
+        [title*="1"]{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div title="111">尚硅谷1</div>
+    <div title="222">尚硅谷2</div>
+    <div title="a333">尚硅谷3</div>
+    <div title="444">尚硅谷4</div>
+</body>
+</html>

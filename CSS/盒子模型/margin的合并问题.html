@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>margin的合并问题</title>
+    <style>
+        /* 当前一个元素设置了下外边距，
+        后一个元素设置了上外边距，
+        此时两个外边距只会显示大的一个，
+        两个一样时，只显示一个 */
+        .box{
+            width: 200px;
+            height: 200px;
+        }
+        .box1{
+            background-color: orange;
+            margin-bottom: 50px;
+        }
+        .box2{
+            background-color: skyblue;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+</body>
+</html>

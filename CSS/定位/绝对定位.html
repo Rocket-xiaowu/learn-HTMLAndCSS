@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+    <style>
+        .outer{
+            width: 500px;
+            background-color: skyblue;
+            padding: 20px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+        }
+        .box1{
+            background-color: gray;
+        }
+        .box2{
+            background-color: orange;
+            /* 绝对定位不能和浮动一起用，且是找第一个具有定位的祖先元素的位置 */
+            position: absolute;
+            top: 120;
+            left: 20;
+        }
+        .box3{  
+            background-color: green;
+        }
+        .outer:hover .box2{
+            left: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+</html>
