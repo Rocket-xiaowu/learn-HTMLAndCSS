@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <title>表单</title>
 </head>
+
 <body>
     <div>
-    <form action="https://www.baidu.com/s">
-        <input type="text" name="wd">
-        <button>搜索</button>
-        <hr>
-    </form>
-    <form action="https://search.jd.com/search" target="_blank">
-        <input type="text" name="keyword">
-        <button>搜索</button>
-    </form>
+        <form action="https://www.baidu.com/s">
+            <input type="text" name="wd">
+            <button>搜索</button>
+            <hr>
+        </form>
+        <form action="https://search.jd.com/search" target="_blank">
+            <input type="text" name="keyword">
+            <button>搜索</button>
+        </form>
     </div>
     <form action="https://search.jd.com/search" target="_blank">
         <!-- 文本输入框 -->
-        账户：<input type="text",name="account" value="张三" maxlength="10"><br>
+        账户：<input type="text" ,name="account" value="张三" maxlength="10"><br>
         <!-- 密码输入框 -->
-        密码：<input type="password",name="pwd" value="123" maxlength="10"><br>
+        密码：<input type="password" ,name="pwd" value="123" maxlength="10"><br>
         <!-- 单选框 -->
         性别：
         <input type="radio" name="gender" value="male">男
-        <input type="radio" name="gender" value="male">女<br>
+        <input type="radio" name="gender" value="female">女<br>
         <!-- 多选框 -->
         爱好：
         <input type="checkbox" name="hobby" value="smoke">抽烟
@@ -52,4 +54,5 @@
         <button type="button">检测账户是否被注册</button>
     </form>
 </body>
+
 </html>
