@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <title>否定伪类</title>
     <style>
-        div>p:not(.fail){
+        /* 选中没有fail属性的元素 */
+        div>p:not(.fail) {
             color: red;
         }
     </style>
 </head>
+
 <body>
     <div>
         <p>张三：99分</p>
@@ -18,4 +21,5 @@
         <p class="fail">孙七：50分</p>
     </div>
 </body>
+
 </html>

@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <title>兄弟选择器</title>
     <style>
         /* 相邻兄弟选择器与div最近的p元素，且是往下看 */
-        /* div+p{
+        div+p {
             color: red;
-        } */
+        }
+
         /* 通配兄弟选择器：所有的兄弟均选择（也是只能往下看） */
-        div~p{
+        div~p {
             color: green;
         }
     </style>
 </head>
+
 <body>
-        <div>
-            <p>尚硅谷</p>
-        </div>
-        <p>前端</p>
-        <p>Java</p>
-        <p>大数据</p>
-        <p>UI</p>
+    <div>
+        <p>尚硅谷</p>
+    </div>
+    <p>前端</p>
+    <p>Java</p>
+    <p>大数据</p>
+    <p>UI</p>
 </body>
+
 </html>

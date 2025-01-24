@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <title>伪元素选择器</title>
     <style>
-        div::first-letter{
-            color:red;
+        /* 第一个字 */
+        div::first-letter {
+            color: red;
             font-size: 40px;
         }
-        div::first-line{
+
+        /* 第一行 */
+        div::first-line {
             background-color: yellow;
         }
-        div::selection{
+
+        /* 被选中的部分 */
+        div::selection {
             background-color: green;
             color: orange;
         }
-        input::placeholder{
+
+        /* 输入框里的默认文字 */
+        input::placeholder {
             color: skyblue;
         }
-        p::before{
+
+        /* 元素的前面 */
+        p::before {
             content: "￥";
         }
-        p::after{
+
+        /* 元素的后面 */
+        p::after {
             content: ".00";
         }
     </style>
 </head>
+
 <body>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, tempore quaerat quidem ex facilis sed reiciendis sequi autem dicta inventore esse! Sed maiores vitae est cumque, architecto laudantium aut ab distinctio, fuga blanditiis quae exercitationem? Ab sit cumque assumenda ratione? Distinctio at eveniet amet deleniti ad impedit, quidem maxime. Optio repudiandae dolores enim tenetur a! Quos aut provident eius error!</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, tempore quaerat quidem ex facilis sed
+        reiciendis sequi autem dicta inventore esse! Sed maiores vitae est cumque, architecto laudantium aut ab
+        distinctio, fuga blanditiis quae exercitationem? Ab sit cumque assumenda ratione? Distinctio at eveniet amet
+        deleniti ad impedit, quidem maxime. Optio repudiandae dolores enim tenetur a! Quos aut provident eius error!
+    </div>
     <input type="text" placeholder="请输入您的名字">
     <p>199</p>
     <p>299</p>
     <p>399</p>
     <p>499</p>
 </body>
+
 </html>

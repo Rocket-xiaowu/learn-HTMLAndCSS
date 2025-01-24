@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <title>动态伪类</title>
     <style>
         /* 没有访问过的是橙色 */
-        a:link{
+        a:link {
             color: orange;
         }
+
         /* 访问过的是棕色 */
-        a:visited{
+        a:visited {
             color: brown;
         }
+
         /* 选中的是鼠标悬浮状态的a元素 */
-        a:hover{
+        a:hover {
             color: skyblue;
         }
+
         /* 选中激活状态的a元素 */
-        a:active{
+        a:active {
             color: green;
         }
+
+        /* 输入框和下拉框获得焦点是字体是橙色，背景是绿色 */
         input:focus,
-        select:focus{
+        select:focus {
             color: orange;
             background-color: green;
         }
     </style>
 </head>
+
 <body>
     <a href="http://www.baidu.com">去百度</a>
     <a href="http://www.jd.com">去京东</a>
@@ -41,4 +48,5 @@
         <option value="beijing">北京</option>
     </select>
 </body>
+
 </html>
